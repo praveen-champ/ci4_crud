@@ -1,0 +1,47 @@
+CRITICAL - 2023-12-17 08:22:07 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 214.
+ 1 FCPATH\index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-17 08:22:08 --> Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\codeigniter-crud-example-main\system\Helpers\number_helper.php:136
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter-crud-example-main\system\Helpers\number_helper.php(55): format_number(10, 2, NULL, Array)
+#1 C:\xampp\htdocs\codeigniter-crud-example-main\system\Debug\BaseExceptionHandler.php(145): number_to_size(10, 2)
+#2 C:\xampp\htdocs\codeigniter-crud-example-main\app\Views\errors\html\error_exception.php(360): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(10485760)
+#3 C:\xampp\htdocs\codeigniter-crud-example-main\system\Debug\BaseExceptionHandler.php(241): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\codeigniter-crud-example-main\system\Debug\BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 C:\xampp\htdocs\codeigniter-crud-example-main\system\Debug\ExceptionHandler.php(109): CodeIgniter\Debug\BaseExceptionHandler->render(Object(Error), 500, 'C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\codeigniter-crud-example-main\system\Debug\Exceptions.php(147): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#8 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\xampp\htdocs\codeigniter-crud-example-main\public\index.php(67): CodeIgniter\CodeIgniter->initialize()
+#1 {main}
+in SYSTEMPATH\Helpers\number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-17 14:09:28 --> Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\codeigniter-crud-example-main\app\Config\Routes.php on line 18 and at least 2 expected
+in SYSTEMPATH\Router\RouteCollection.php on line 1011.
+ 1 APPPATH\Config\Routes.php(18): CodeIgniter\Router\RouteCollection->get('UserCrud::create')
+ 2 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\xampp\\htdocs\\codeigniter-crud-example-main\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-17 14:09:44 --> Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\codeigniter-crud-example-main\app\Config\Routes.php on line 18 and at least 2 expected
+in SYSTEMPATH\Router\RouteCollection.php on line 1011.
+ 1 APPPATH\Config\Routes.php(18): CodeIgniter\Router\RouteCollection->get('UserCrud::create')
+ 2 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\xampp\\htdocs\\codeigniter-crud-example-main\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-17 14:52:03 --> Invalid file: "edit_user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_user.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('edit_user', [], true)
+ 3 APPPATH\Controllers\UserCrud.php(36): view('edit_user', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserCrud->singleUser('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
